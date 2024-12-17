@@ -15,7 +15,7 @@
     "commands": [
       {
         "command": "new-file-excalidraw-command.createFile",
-        "title": "Create .excalidraw File at Desktop"
+        "title": "Excalidraw File Creator - Create .excalidraw.png File"
       }
     ]
   },

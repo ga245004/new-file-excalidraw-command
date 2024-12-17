@@ -1,71 +1,63 @@
-# new-file-excalidraw-command README
+# Excalidraw File Creator
 
-This is the README for your extension "new-file-excalidraw-command". After writing up a brief description, we recommend including the following sections.
+**Excalidraw File Creator** is a Visual Studio Code extension that lets you quickly create and open `.excalidraw.png` files. This extension integrates seamlessly with the **[Excalidraw](https://github.com/excalidraw/excalidraw)** extension for VS Code.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Quick File Creation:** Create `.excalidraw.png` files by simply entering a file name.
+- **Flexible Save Locations:**
+  - Save files to your **Desktop**.
+  - Save files to your **Documents** directory.
+  - Choose a **Custom Location** for the file.
+- **Automatic Opening:** Automatically opens the newly created file in VS Code.
 
-For example if there is an image subfolder under your extension project workspace:
+## Integration with Excalidraw
 
-\!\[feature X\]\(images/feature-x.png\)
+This extension works in conjunction with the **Excalidraw extension** for VS Code. To use it, create an empty file with a `.excalidraw`, `.excalidraw.json`, `.excalidraw.svg`, or `.excalidraw.png` extension, and open it in Visual Studio Code.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+If you haven't already, install the **[Excalidraw VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Excalidraw.excalidraw)** to work with your files directly inside VS Code.
+
+You can also try the **Excalidraw Web Version** here: [https://excalidraw.com/](https://excalidraw.com/).
+
+## How to Use
+
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+2. Search for and run the command:  
+   **`Create Excalidraw File`**.
+3. Enter the desired file name.
+4. Select where to save the file:
+   - `Document Directory`: Saves the file to your `Documents` folder.
+   - `Desktop Directory`: Saves the file to your `Desktop`.
+   - `Custom Location`: Prompts you to select a folder.
+5. The file is created and automatically opened in VS Code.
+
+## Installation
+
+1. Download or clone this repository.
+2. Open the folder in VS Code.
+3. Run `npm install` to install dependencies.
+4. Press `F5` to launch the extension in a new VS Code window.
+5. Optionally, package the extension and install it from the `.vsix` file.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **[Excalidraw VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Excalidraw.excalidraw)** (installed and enabled).
+- Node.js installed for development.
+- VS Code installed.
 
-## Extension Settings
+## Example Workflow
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Enter `my-drawing` as the file name.
+2. Choose `Desktop Directory` as the save location.
+3. The extension creates `my-drawing.excalidraw.png` on your desktop and opens it in VS Code.
+4. Open the file in VS Code using the Excalidraw extension to start editing it.
 
-For example:
+## Future Features (Ideas)
 
-This extension contributes the following settings:
+- Add support for pre-configured default save locations.
+- Integration with Excalidraw web app or API.
+- Autosave support (on a user opt-in basis).
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## License
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is open-source and licensed under the [MIT License](LICENSE).
